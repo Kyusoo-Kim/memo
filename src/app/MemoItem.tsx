@@ -1,7 +1,5 @@
 "use client";
 
-import { useRouter } from "next/navigation";
-
 export default function MemoItem({ id, content, tags, onDelete }: { id: string; content: string; tags: string[]; onDelete: () => void }) {
   const handleDelete = async () => {
     const response = await fetch(`/api/memo`, {

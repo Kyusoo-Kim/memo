@@ -31,5 +31,22 @@
       "webOS",
       "luna"
     ]
+  },
+  {
+    "id": "57157e77-a600-4cb8-8356-524cd10e2ced",
+    "content": "Next.js 빌드 방법\n\n$ npm run build\n$ npm start",
+    "tags": [
+      "Next.js",
+      "Build"
+    ]
+  },
+  {
+    "id": "f3969199-0d57-467b-94c5-312f997cfc06",
+    "content": "# .bashrc\n\n\nparse_git_branch() {\n\n   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \\(.*\\)/ (\\1)/'\n\n}\n\nPS1='${debian_chroot:+($debian_chroot)}\\[\\033[01;35m\\]\\u\\[\\033[01;34m\\]@\\[\\033[01;32m\\]\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\[\\033[33m\\]$(parse_git_branch)\\[\\033[00m\\]\\$'\n",
+    "tags": [
+      "git",
+      "shell",
+      "parse_git_branch()"
+    ]
   }
 ]
