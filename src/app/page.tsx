@@ -60,7 +60,7 @@ export default function Home() {
         </Link>
       </header>
       <main className="flex flex-col items-center justify-between p-10">
-        <div>
+        <div className="w-full">
           <input type="text" placeholder="Search..." className="w-full border p-2 mb-4" value={searchTerm} onChange={handleSearch} />
           {
             filteredData.map((item: MemoItemData) => (
