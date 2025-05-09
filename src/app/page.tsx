@@ -19,7 +19,7 @@ async function fetchData() {
       throw new Error(`HTTP error! status: ${res.status}`);
     }
     const data = await res.json();
-    return data;
+    return data.reverse(); // Reverse the array before returning
   } catch (error) {
     console.error("Error fetching data:", error);
     return [];
